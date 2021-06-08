@@ -4,7 +4,7 @@
 [*see instructions for details*](Instructions.md)
 
 *Insert Class Diagram here*  
-![alt text](https://github.com/SACHSTech/oop-assignment-XinanShan/blob/main/OOP%20%20-%20Page%201.png)
+![alt text](https://github.com/SACHSTech/oop-assignment-XinanShan/blob/main/OOP%20%20-%20Page%201%20(1).png)
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
 
