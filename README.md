@@ -7,3 +7,5 @@
 ![alt text](https://github.com/SACHSTech/oop-assignment-XinanShan/blob/main/OOP%20%20-%20Page%201.png)
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
+
+This diagram models a hierarchy of the employees at a techonology-related company. Using this system, the user that see the information of the staff at each position. The information that this system provides for all positions is their name, work hours, salary and title. However, there are additional information for each of the position. For example,the system would provide the programming language of the programmers, their ID and how long they have been working in the company. The user can find the information of each staff with their name, position and other information with this system. 
