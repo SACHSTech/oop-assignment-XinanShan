@@ -9,5 +9,10 @@ public class Company {
   private ArrayList<Programmers> programmers;
   private ArrayList<Security> security;
 
+  public Company(){
+    manager = new ArrayList<Manager>();
+    programmers = new ArrayList<Programmers>();
+    security = new ArrayList<Security>();
+  }
   
 }
