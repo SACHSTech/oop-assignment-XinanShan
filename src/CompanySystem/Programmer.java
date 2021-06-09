@@ -1,7 +1,7 @@
 package CompanySystem;
 import CompanySystem.*;
 
-public class Programmer extends Staff{
+public class Programmer extends Staff {
   private String programmingLanguage;
   private int programmerID;
   private int timeInCompany;

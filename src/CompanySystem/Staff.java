@@ -1,7 +1,7 @@
 package CompanySystem;
 import CompanySystem.*;
 
-public class Staff{
+public class Staff {
 
   private String firstName;
   private String lastName;
