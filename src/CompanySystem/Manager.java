@@ -10,10 +10,10 @@ public class Manager extends Staff {
     numOfPeopleUnder = numberPeoUnder;
     project = proj;
   } 
-  public int GetNumOfPeopleUnder(){
+  public int getNumOfPeopleUnder(){
     return numOfPeopleUnder;
   }
-  public String GetProject(){
+  public String getProject(){
     return project;
   }
   

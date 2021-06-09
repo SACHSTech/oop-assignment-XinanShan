@@ -12,13 +12,13 @@ public class Security extends Staff {
     workoutDaysPerWeek = WorOutDay;
     carryGun = CarGun;
   }
-  public String GetUniformColour(){
+  public String getUniformColour(){
     return uniformColour;
   }
   public int getWorkoutDaysPerWeek(){
     return workoutDaysPerWeek;
   }
-  public boolean GetCarryGun(){
+  public boolean getCarryGun(){
     return carryGun;
   }
   

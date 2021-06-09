@@ -17,19 +17,19 @@ public class Staff{
     workHours = Whour;
     title = titl;
   }
-  public String GetFirstName(){
+  public String getFirstName(){
     return firstName;
   }
-  public String GetLastName(){
+  public String getLastName(){
     return lastName;
   }
-  public int GetSalary(){
+  public int getSalary(){
     return salary;
   }
-  public int GetWorkHours(){
+  public int getWorkHours(){
     return workHours;
   }
-  public int GetTitle(){
+  public int getTitle(){
     return title;
   }
 }

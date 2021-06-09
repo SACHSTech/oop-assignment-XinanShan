@@ -23,5 +23,13 @@ public class Company {
   public void addSecurity (Security newSecurity){
     securities.add(newSecurity);
   }
-  
+  public int getManagerSize(){
+    return managers.size();
+  }
+  public int getProgrammersSize(){
+    return programmers.size();
+  }
+  public int getSecuritySize(){
+    return securities.size();
+  }
 }
