@@ -4,7 +4,7 @@ import CompanySystem.*;
 public class Security extends Staff {
   private String uniformColour;
   private int workoutDaysPerWeek;
-  private Boolean carryGun;
+  private boolean carryGun;
 
   public Security(String fName, String lName, int sala, int Whour, String titl, String UniCol, int WorOutDay, boolean CarGun){
     super(fName, lName, sala, Whour, titl);
@@ -12,5 +12,13 @@ public class Security extends Staff {
     workoutDaysPerWeek = WorOutDay;
     carryGun = CarGun;
   }
-  
+  public String GetUniformColour(){
+    return uniformColour;
+  }
+  public int getWorkoutDaysPerWeek(){
+    return workoutDaysPerWeek;
+  }
+  public boolean GetCarryGun(){
+    return carryGun;
+  }
 }
