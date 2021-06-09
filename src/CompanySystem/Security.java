@@ -1,4 +1,4 @@
-package CompanySystem;
+ package CompanySystem;
 import CompanySystem.*;
 
 public class Security extends Staff {
@@ -21,4 +21,5 @@ public class Security extends Staff {
   public boolean GetCarryGun(){
     return carryGun;
   }
+  
 }
