@@ -12,4 +12,14 @@ public class Programmer extends Staff{
     programmerID = IDNum;
     timeInCompany = time;
   }
+  public String GetProgrammingLanguage(){
+    return programmingLanguage;
+  }
+  public String GetProgrammerID(){
+    return programmerID;
+  }
+  public String GetTimeInCompany(){
+    return timeInCompany;
+  }
+  
 }
