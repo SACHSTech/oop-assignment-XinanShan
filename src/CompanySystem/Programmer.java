@@ -21,5 +21,15 @@ public class Programmer extends Staff {
   public String getTimeInCompany(){
     return timeInCompany;
   }
-
+  public String toString(){
+    System.out.println("--------------------------------------");
+    System.out.println("Position: " + getTitle());
+    System.out.println("Name: " + getFirstName() + " "+getLastName());
+    System.out.println("ProgrammerID: " + getProgrammerID());
+    System.out.println("Salary: $" + getSalary());
+    System.out.println("Work Hours Each Day: " + getWorkHours);
+    System.out.println("Programming language using: " + getProgrammingLanguage());
+    System.out.println("He/She has worked in the company for: " + getTimeInCompany() + "year(s)");
+    return "--------------------------------------";
+  }
 }
