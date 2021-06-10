@@ -6,6 +6,7 @@ public class Programmer extends Staff {
   private int programmerID;
   private int timeInCompany;
   private static int totalProgrammer = 0;
+  // Constructor for programmers
   public Programmer(String fName, String lName, int sala, int Whour, String titl, String programLan, int IDNum, int time){
     super(fName, lName, sala, Whour, titl);
     programmingLanguage = programLan;
@@ -13,6 +14,7 @@ public class Programmer extends Staff {
     timeInCompany = time;
     totalProgrammer++;
   }
+  // Getter method for programmers
   public String getProgrammingLanguage(){
     return programmingLanguage;
   }
@@ -25,6 +27,7 @@ public class Programmer extends Staff {
   public static int getTotalProgrammer(){
     return totalProgrammer;
   }
+  //This methods is how the object is going to show
   public String toString(){
     System.out.println("--------------------------------------");
     System.out.println("Position: " + getTitle());

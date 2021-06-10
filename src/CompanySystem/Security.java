@@ -7,6 +7,7 @@ public class Security extends Staff {
   private boolean carryGun;
   private String gun = ""; 
   private static int totalSecurity = 0;
+  // Constructor for security guards 
   public Security(String fName, String lName, int sala, int Whour, String titl, String UniCol, int WorOutDay, boolean CarGun){
     super(fName, lName, sala, Whour, titl);
     uniformColour = UniCol;
@@ -14,6 +15,7 @@ public class Security extends Staff {
     carryGun = CarGun;
     totalSecurity++;
   }
+  // Getter method for security guards
   public String getUniformColour(){
     return uniformColour;
   }
@@ -34,6 +36,7 @@ public class Security extends Staff {
   public static int getTotalSecurity(){
     return totalSecurity;
   }
+  //This methods is how the object is going to show
   public String toString(){
     System.out.println("--------------------------------------");
     System.out.println("Position: " + getTitle());

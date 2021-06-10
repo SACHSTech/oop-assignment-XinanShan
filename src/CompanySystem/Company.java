@@ -10,10 +10,12 @@ public class Company {
   private ArrayList<Security> securities;
 
   public Company(){
+    // initialize all the lists for the objects
     managers = new ArrayList<Manager>();
     programmers = new ArrayList<Programmers>();
     securities = new ArrayList<Security>();
   }
+  // methods to add objects into the list
   public void addManager(Manager newManager){
     managers.add(newManager);
   }
@@ -23,6 +25,7 @@ public class Company {
   public void addSecurity (Security newSecurity){
     securities.add(newSecurity);
   }
+  // Getter method for the size of the list
   public int getManagerSize(){
     return managers.size();
   }
@@ -32,6 +35,7 @@ public class Company {
   public int getSecuritySize(){
     return securities.size();
   }
+  // print the list out with information
   public void printManagerList(){
     for(int i = 0; i < getManagerSize(); i++){
       System.out.println(managers.get(i));

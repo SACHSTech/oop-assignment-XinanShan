@@ -10,6 +10,7 @@ import java.util.ArrayList;
 */
 public class Main {
   public static void main(String[] args) throws IOException{
+    //Initialize and create all the objects 
     Manager wendy = new Manager("Wendy", "Smith", 14000, 7, "Manager", 2, "Coldheart");
     Manager rick = new Manager("Rick", "Sanchez", 13000, 6, "Manager", 3, "Sweet Business");
     Programmer tammmy = new Programmer("Tammy", "Guetermann", 9000, 7, "Programmer", "C++", 518761757, 7);
@@ -21,7 +22,8 @@ public class Main {
     Security dan = new Security("Dan", "Harmon", 8000, 7, "Security Guard", "White", 3, false);
     Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "Blue", 4, true);
     Company theFort = new Company(); 
-
+    
+    //Adding all the objects in the list
     theFort.addManager(wendy);
     theFort.addManager(rick);
     theFort.addProgrammers(tammmy);
@@ -32,13 +34,11 @@ public class Main {
     theFort.addSecurity(chris);
     theFort.addSecurity(dan);
     theFort.addSecurity(cassie); 
-    int managerNum = theFort.getManagerSize();
-    int programmerNum = theFort.getProgrammersSize();
-    int securityNum = theFort.getSecuritySize();
+    
     String choice = "";
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
     choice = keyboard.readLine();
-
+    // Showing the number of people at each position and ask the user for the input
     System.out.println(" ");
     System.out.println("Welcome to the Fort System");
     System.out.println("People in the company: ");
@@ -46,7 +46,7 @@ public class Main {
     System.out.println(getProgrammersSize + "Programmers ");
     System.out.println(getSecuritySize + "Security Guards");
     System.out.println("Please enter the position of the staff you want to see");
-    
+    // Print the information of the staff at the position the user enetered
     if (choice.equalsIgnoreCase("Manager") || choice.equalsIgnoreCase("Managers")){
       theFort.printManagerList();
     } else if (choice.equalsIgnoreCase("Programmer") || choice.equalsIgnoreCase("Programmers")){

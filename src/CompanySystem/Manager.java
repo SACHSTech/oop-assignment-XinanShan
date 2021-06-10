@@ -5,7 +5,7 @@ public class Manager extends Staff {
   private int numOfPeopleUnder;
   private String project;
   private static int totalManager = 0;
-
+  //Constructor for managers
   public Manager(String fName, String lName, int sala, int Whour, String titl, int numberPeoUnder, String proj){
     super(fName, lName, sala, Whour, titl);
     numOfPeopleUnder = numberPeoUnder;
@@ -13,6 +13,7 @@ public class Manager extends Staff {
     
     totalManager++;
   } 
+  //Getter method for managers
   public int getNumOfPeopleUnder(){
     return numOfPeopleUnder;
   }
@@ -22,6 +23,7 @@ public class Manager extends Staff {
   public static int getTotalManager(){
     return totalManager;
   }
+  //This methods is how the object is going to show
   public String toString(){
     System.out.println("--------------------------------------");
     System.out.println("Position: " + getTitle());

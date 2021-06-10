@@ -17,6 +17,7 @@ public class Staff {
     workHours = Whour;
     title = titl;
   }
+  // Getter methods for staff
   public String getFirstName(){
     return firstName;
   }
