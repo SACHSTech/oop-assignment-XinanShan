@@ -17,9 +17,9 @@ public class Main {
     Programmer alex = new Programmer("Alex", "Hirsch", 11000, 8, "Programmer", "Python", 518638422, 12);
     Programmer sarah = new Programmer("Sarah", "Chalke", 8000, 7, "Programmer", "Java", 518622487, 6);
     Programmer zeep = new Programmer("Zeep", "Xanflorp", 7600, 6, "Programmer", "Python", 518147963, 5);
-    Security chris = new Security("Chris", "Parnell", 7600, 6, "Security Guard", ");
-    Security dan = new Security("Dan", "Harmon", 7600, 6, "Security Guard", ");
-    Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "");
+    Security chris = new Security("Chris", "Parnell", 7600, 6, "Security Guard", "Blue", 4, true);
+    Security dan = new Security("Dan", "Harmon", 8000, 7, "Security Guard", "White", 3, false);
+    Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "Blue", 4, true);
     
   }
 }
