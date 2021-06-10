@@ -20,6 +20,9 @@ public class Main {
     Security chris = new Security("Chris", "Parnell", 7600, 6, "Security Guard", "Blue", 4, true);
     Security dan = new Security("Dan", "Harmon", 8000, 7, "Security Guard", "White", 3, false);
     Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "Blue", 4, true);
+    Company theFort = new Company(); 
+    String choice = "";
     
+
   }
 }
