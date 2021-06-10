@@ -21,6 +21,16 @@ public class Main {
     Security dan = new Security("Dan", "Harmon", 8000, 7, "Security Guard", "White", 3, false);
     Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "Blue", 4, true);
     Company theFort = new Company(); 
+    theFort.addManager(wendy);
+    theFort.addManager(rick);
+    theFort.addProgrammers(tammmy);
+    theFort.addProgrammers(toby);
+    theFort.addProgrammers(alex);
+    theFort.addProgrammers(sarah);
+    theFort.addProgrammers(zeep);
+    theFort.addSecurity(chris);
+    theFort.addSecurity(dan);
+    theFort.addSecurity(cassie); 
     String choice = "";
     
 
