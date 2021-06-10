@@ -10,13 +10,13 @@ import java.util.ArrayList;
 */
 public class Main {
   public static void main(String[] args) throws IOException{
-    Manager wendy = new Manager("Wendy", "Smith", );
-    Manager rick = new Manager("Rick", "Sanchez", )
+    Manager wendy = new Manager("Wendy", "Smith", 14000, 7, "Manager", 2, "Coldheart");
+    Manager rick = new Manager("Rick", "Sanchez", 13000, 6, "Manager", 3, "Sweet Business")
     Programmer tammmy = new Programmer("Tammy", "Guetermann");
     Programmer toby = new Programmer("Toby", "Matthews");
     Programmer tammmy = new Programmer("Alex", "Hirsch");
     Programmer sarah = new Programmer("Sarah", "Chalke");
-    Programmer sarah = new Programmer("Zeep", "Xanflorp");
+    Programmer zeep = new Programmer("Zeep", "Xanflorp");
     Security chris = new Security("Chris", "Parnell", );
     Security dan = new Security("Dan", "Harmon");
     Security cassie = new Security("Cassie", "Steele", );
