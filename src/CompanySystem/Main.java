@@ -31,6 +31,9 @@ public class Main {
     theFort.addSecurity(chris);
     theFort.addSecurity(dan);
     theFort.addSecurity(cassie); 
+    int managerNum = theFort.getManagerSize();
+    int programmerNum = theFort.getProgrammersSize();
+    int securityNum = theFort.getSecuritySize();
     String choice = "";
     
 
