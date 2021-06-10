@@ -35,7 +35,24 @@ public class Main {
     int programmerNum = theFort.getProgrammersSize();
     int securityNum = theFort.getSecuritySize();
     String choice = "";
+    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+    choice = keyboard.readLine();
     
-
+    System.out.println(" ");
+    System.out.println("Welcome to the Fort System");
+    System.out.println("People in the company: ");
+    System.out.println(getManagerSize + " Managers ");
+    System.out.println(getProgrammersSize + "Programmers ");
+    System.out.println(getSecuritySize + "Security Guards");
+    System.out.println("Please enter the position of the staff you want to see");
+    
+    if (choice.equalsIgnoreCase("Manager") || choice.equalsIgnoreCase("Managers")){
+      theFort.printManagerList();
+    } else if (choice.equalsIgnoreCase("Programmer") || choice.equalsIgnoreCase("Programmers")){
+      theFort.printProgrammerList();
+    } else if (choice.equalsIgnoreCase("Security Guard") || choice.equalsIgnoreCase("Security Guards")){
+    } else{
+      System.out.println("Please exit the system and enter a valid position next time");
+    }
   }
 }

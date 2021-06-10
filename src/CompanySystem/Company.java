@@ -26,10 +26,25 @@ public class Company {
   public int getManagerSize(){
     return managers.size();
   }
-  public int getProgrammersSize(){
+  public int getProgrammerSize(){
     return programmers.size();
   }
   public int getSecuritySize(){
     return securities.size();
+  }
+  public void printManagerList(){
+    for(int i = 0; i < getManagerSize(); i++){
+      System.out.println(managers.get(i));
+    }
+  }
+  public void printProgrammerList(){
+    for(int i = 0; i < getProgrammerSize(); i++){
+      System.out.println(programmers.get(i));
+    }
+  }
+  public void printSecurityList(){
+    for(int i = 0; i < getSecuritySize(); i++){
+      System.out.println(securities.get(i));
+    }
   }
 }
