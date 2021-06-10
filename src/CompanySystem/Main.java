@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Main {
   public static void main(String[] args) throws IOException{
     Manager wendy = new Manager("Wendy", "Smith", 14000, 7, "Manager", 2, "Coldheart");
-    Manager rick = new Manager("Rick", "Sanchez", 13000, 6, "Manager", 3, "Sweet Business")
+    Manager rick = new Manager("Rick", "Sanchez", 13000, 6, "Manager", 3, "Sweet Business");
     Programmer tammmy = new Programmer("Tammy", "Guetermann", 9000, 7, "Programmer", "C++", 518761757, 7);
     Programmer toby = new Programmer("Toby", "Matthews", 10000, 8, "Programmer", "Python", 518547123, 10);
     Programmer alex = new Programmer("Alex", "Hirsch", 11000, 8, "Programmer", "Python", 518638422, 12);
@@ -21,6 +21,7 @@ public class Main {
     Security dan = new Security("Dan", "Harmon", 8000, 7, "Security Guard", "White", 3, false);
     Security cassie = new Security("Cassie", "Steele", 7600, 6, "Security Guard", "Blue", 4, true);
     Company theFort = new Company(); 
+
     theFort.addManager(wendy);
     theFort.addManager(rick);
     theFort.addProgrammers(tammmy);
@@ -37,7 +38,7 @@ public class Main {
     String choice = "";
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
     choice = keyboard.readLine();
-    
+
     System.out.println(" ");
     System.out.println("Welcome to the Fort System");
     System.out.println("People in the company: ");
@@ -51,6 +52,7 @@ public class Main {
     } else if (choice.equalsIgnoreCase("Programmer") || choice.equalsIgnoreCase("Programmers")){
       theFort.printProgrammerList();
     } else if (choice.equalsIgnoreCase("Security Guard") || choice.equalsIgnoreCase("Security Guards")){
+      theFort.printSecurityList();
     } else{
       System.out.println("Please exit the system and enter a valid position next time");
     }
