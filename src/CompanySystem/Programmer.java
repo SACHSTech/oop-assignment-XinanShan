@@ -5,12 +5,13 @@ public class Programmer extends Staff {
   private String programmingLanguage;
   private int programmerID;
   private int timeInCompany;
-
+  private static int totalProgrammer = 0;
   public Programmer(String fName, String lName, int sala, int Whour, String titl, String programLan, int IDNum, int time){
     super(fName, lName, sala, Whour, titl);
     programmingLanguage = programLan;
     programmerID = IDNum;
     timeInCompany = time;
+    totalProgrammer++;
   }
   public String getProgrammingLanguage(){
     return programmingLanguage;
@@ -20,6 +21,9 @@ public class Programmer extends Staff {
   }
   public String getTimeInCompany(){
     return timeInCompany;
+  }
+  public static int getTotalProgrammer(){
+    return totalProgrammer;
   }
   public String toString(){
     System.out.println("--------------------------------------");

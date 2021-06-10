@@ -4,17 +4,23 @@ import CompanySystem.*;
 public class Manager extends Staff {
   private int numOfPeopleUnder;
   private String project;
+  private static int totalManager = 0;
 
   public Manager(String fName, String lName, int sala, int Whour, String titl, int numberPeoUnder, String proj){
     super(fName, lName, sala, Whour, titl);
     numOfPeopleUnder = numberPeoUnder;
     project = proj;
+    
+    totalManager++;
   } 
   public int getNumOfPeopleUnder(){
     return numOfPeopleUnder;
   }
   public String getProject(){
     return project;
+  }
+  public static int getTotalManager(){
+    return totalManager;
   }
   public String toString(){
     System.out.println("--------------------------------------");

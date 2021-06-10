@@ -6,12 +6,13 @@ public class Security extends Staff {
   private int workoutDaysPerWeek;
   private boolean carryGun;
   private String gun = ""; 
-
+  private static int totalSecurity = 0;
   public Security(String fName, String lName, int sala, int Whour, String titl, String UniCol, int WorOutDay, boolean CarGun){
     super(fName, lName, sala, Whour, titl);
     uniformColour = UniCol;
     workoutDaysPerWeek = WorOutDay;
     carryGun = CarGun;
+    totalSecurity++;
   }
   public String getUniformColour(){
     return uniformColour;
@@ -29,6 +30,9 @@ public class Security extends Staff {
       gun = "No";
     }
     return gun;
+  }
+  public static int getTotalSecurity(){
+    return totalSecurity;
   }
   public String toString(){
     System.out.println("--------------------------------------");
