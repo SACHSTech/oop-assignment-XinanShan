@@ -35,10 +35,7 @@ public class Main {
     theFort.addSecurity(dan);
     theFort.addSecurity(cassie); 
     
-    String choice = "";
-    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-    choice = keyboard.readLine();
-    // Showing the number of people at each position and ask the user for the input
+   // Print the information of the staff at the position the user enetered
     System.out.println(" ");
     System.out.println("Welcome to the Fort System");
     System.out.println("People in the company: ");
@@ -46,7 +43,11 @@ public class Main {
     System.out.println(theFort.getProgrammerSize() + " Programmers ");
     System.out.println(theFort.getSecuritySize() + " Security Guards");
     System.out.println("Please enter the position of the staff you want to see");
-    // Print the information of the staff at the position the user enetered
+   
+    // Showing the number of people at each position and ask the user for the input
+    String choice = "";
+    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+    choice = keyboard.readLine();
     if (choice.equalsIgnoreCase("Manager") || choice.equalsIgnoreCase("Managers")){
       theFort.printManagerList();
     } else if (choice.equalsIgnoreCase("Programmer") || choice.equalsIgnoreCase("Programmers")){
