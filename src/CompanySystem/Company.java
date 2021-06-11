@@ -12,15 +12,15 @@ public class Company {
   public Company(){
     // initialize all the lists for the objects
     managers = new ArrayList<Manager>();
-    programmers = new ArrayList<Programmers>();
+    programmers = new ArrayList<Programmer>();
     securities = new ArrayList<Security>();
   }
   // methods to add objects into the list
   public void addManager(Manager newManager){
     managers.add(newManager);
   }
-  public void addProgrammers(Programmer newProgrammers){
-    programmers.add(newProgrammers);
+  public void addProgrammers(Programmer newProgrammer){
+    programmers.add(newProgrammer);
   }
   public void addSecurity (Security newSecurity){
     securities.add(newSecurity);

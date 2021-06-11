@@ -42,9 +42,9 @@ public class Main {
     System.out.println(" ");
     System.out.println("Welcome to the Fort System");
     System.out.println("People in the company: ");
-    System.out.println(getManagerSize + " Managers ");
-    System.out.println(getProgrammersSize + "Programmers ");
-    System.out.println(getSecuritySize + "Security Guards");
+    System.out.println(theFort.getManagerSize() + " Managers ");
+    System.out.println(theFort.getProgrammerSize() + " Programmers ");
+    System.out.println(theFort.getSecuritySize() + " Security Guards");
     System.out.println("Please enter the position of the staff you want to see");
     // Print the information of the staff at the position the user enetered
     if (choice.equalsIgnoreCase("Manager") || choice.equalsIgnoreCase("Managers")){

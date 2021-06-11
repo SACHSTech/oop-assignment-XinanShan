@@ -30,7 +30,7 @@ public class Staff {
   public int getWorkHours(){
     return workHours;
   }
-  public int getTitle(){
+  public String getTitle(){
     return title;
   }
 }

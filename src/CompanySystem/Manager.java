@@ -29,7 +29,7 @@ public class Manager extends Staff {
     System.out.println("Position: " + getTitle());
     System.out.println("Name: " + getFirstName() + " "+getLastName());
     System.out.println("Salary: $" + getSalary());
-    System.out.println("Work Hours Each Day: " + getWorkHours);
+    System.out.println("Work Hours Each Day: " + getWorkHours());
     System.out.println(+ getNumOfPeopleUnder() + "people under this manager");
     System.out.println("The current project: " + getProject());
     return "--------------------------------------";

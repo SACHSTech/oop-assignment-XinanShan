@@ -18,10 +18,10 @@ public class Programmer extends Staff {
   public String getProgrammingLanguage(){
     return programmingLanguage;
   }
-  public String getProgrammerID(){
+  public int getProgrammerID(){
     return programmerID;
   }
-  public String getTimeInCompany(){
+  public int getTimeInCompany(){
     return timeInCompany;
   }
   public static int getTotalProgrammer(){
@@ -34,7 +34,7 @@ public class Programmer extends Staff {
     System.out.println("Name: " + getFirstName() + " "+getLastName());
     System.out.println("ProgrammerID: " + getProgrammerID());
     System.out.println("Salary: $" + getSalary());
-    System.out.println("Work Hours Each Day: " + getWorkHours);
+    System.out.println("Work Hours Each Day: " + getWorkHours());
     System.out.println("Programming language using: " + getProgrammingLanguage());
     System.out.println("He/She has worked in the company for: " + getTimeInCompany() + "year(s)");
     return "--------------------------------------";

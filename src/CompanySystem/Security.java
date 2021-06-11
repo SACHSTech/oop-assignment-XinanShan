@@ -41,9 +41,8 @@ public class Security extends Staff {
     System.out.println("--------------------------------------");
     System.out.println("Position: " + getTitle());
     System.out.println("Name: " + getFirstName() + " "+getLastName());
-    System.out.println("ProgrammerID: " + getProgrammerID());
     System.out.println("Salary: $" + getSalary());
-    System.out.println("Work Hours Each Day: " + getWorkHours);
+    System.out.println("Work Hours Each Day: " + getWorkHours());
     System.out.println("Uniform Colour: " + getUniformColour());
     System.out.println("Days of exercise each week: " + getWorkoutDaysPerWeek() + "day(s)");
     System.out.println("Is he/she armed with a gun: " + getGun());
