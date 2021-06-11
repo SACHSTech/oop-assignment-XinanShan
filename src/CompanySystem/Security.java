@@ -6,7 +6,6 @@ public class Security extends Staff {
   private String uniformColour;
   private int workoutDaysPerWeek;
   private boolean carryGun;
-  private String gun = ""; 
   /**
     * Constructor - creates a new Security Guard instance
     * @param fname - the Security Guard's first name
@@ -50,20 +49,6 @@ public class Security extends Staff {
   public boolean getCarryGun(){
     return carryGun;
   }
-
-  /**
-  * Convert the boolean into string
-  * @return a yes or no as in string
-  */
-  public String getGun(){
-    if (carryGun = true){
-      gun = "Yes";
-    }else {
-      gun = "No";
-    }
-    return gun;
-  }
-  
   /**
   * String representation for a Security Guard
   * @return all the information of a Security Guard
@@ -75,8 +60,8 @@ public class Security extends Staff {
     System.out.println("Salary: $" + getSalary());
     System.out.println("Work Hours Each Day: " + getWorkHours());
     System.out.println("Uniform Colour: " + getUniformColour());
-    System.out.println("Days of exercise each week: " + getWorkoutDaysPerWeek() + "day(s)");
-    System.out.println("Is he/she armed with a gun: " + getGun());
+    System.out.println("Days of exercise each week: " + getWorkoutDaysPerWeek() + " day(s)");
+    System.out.println("Is he/she armed with a gun: " + getCarryGun());
     return "--------------------------------------";
   }
 }

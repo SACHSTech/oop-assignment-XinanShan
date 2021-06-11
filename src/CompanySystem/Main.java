@@ -58,7 +58,7 @@ public class Main {
         theFort.printManagerList();
       } else if (choice.equals("2")){
         theFort.printProgrammerList();
-      } else if (choice.equals(3)){
+      } else if (choice.equals("3")){
         theFort.printSecurityList();
       } else{
         System.out.println("Thank you for using the Fort System!");
