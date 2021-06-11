@@ -10,8 +10,6 @@ public class Manager extends Staff {
     super(fName, lName, sala, Whour, titl);
     numOfPeopleUnder = numberPeoUnder;
     project = proj;
-    
-    totalManager++;
   } 
   //Getter method for managers
   public int getNumOfPeopleUnder(){
@@ -20,12 +18,9 @@ public class Manager extends Staff {
   public String getProject(){
     return project;
   }
-  public static int getTotalManager(){
-    return totalManager;
-  }
   //This methods is how the object is going to show
   public String toString(){
-    System.out.println("--------------------------------------");
+    System.out.println("##################################");
     System.out.println("Position: " + getTitle());
     System.out.println("Name: " + getFirstName() + " "+getLastName());
     System.out.println("Salary: $" + getSalary());

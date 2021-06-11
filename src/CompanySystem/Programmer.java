@@ -12,7 +12,6 @@ public class Programmer extends Staff {
     programmingLanguage = programLan;
     programmerID = IDNum;
     timeInCompany = time;
-    totalProgrammer++;
   }
   // Getter method for programmers
   public String getProgrammingLanguage(){
@@ -24,12 +23,9 @@ public class Programmer extends Staff {
   public int getTimeInCompany(){
     return timeInCompany;
   }
-  public static int getTotalProgrammer(){
-    return totalProgrammer;
-  }
   //This methods is how the object is going to show
   public String toString(){
-    System.out.println("--------------------------------------");
+    System.out.println("##################################");
     System.out.println("Position: " + getTitle());
     System.out.println("Name: " + getFirstName() + " "+getLastName());
     System.out.println("ProgrammerID: " + getProgrammerID());

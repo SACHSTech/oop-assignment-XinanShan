@@ -13,7 +13,6 @@ public class Security extends Staff {
     uniformColour = UniCol;
     workoutDaysPerWeek = WorOutDay;
     carryGun = CarGun;
-    totalSecurity++;
   }
   // Getter method for security guards
   public String getUniformColour(){
@@ -33,12 +32,9 @@ public class Security extends Staff {
     }
     return gun;
   }
-  public static int getTotalSecurity(){
-    return totalSecurity;
-  }
   //This methods is how the object is going to show
   public String toString(){
-    System.out.println("--------------------------------------");
+    System.out.println("##################################");
     System.out.println("Position: " + getTitle());
     System.out.println("Name: " + getFirstName() + " "+getLastName());
     System.out.println("Salary: $" + getSalary());
