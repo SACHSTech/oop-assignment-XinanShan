@@ -47,12 +47,13 @@ public class Main {
     // Showing the number of people at each position and ask the user for the input
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
     while (true){
+      System.out.println("");
+      System.out.println("");
       System.out.println("1. Manager");
       System.out.println("2. Programmer");
       System.out.println("3. Security Guard");
       System.out.println("Enter any other key to exit");
-      String choice = "";
-      choice = keyboard.readLine();
+      String choice = keyboard.readLine();
       if (choice.equals("1")){
         theFort.printManagerList();
       } else if (choice.equals("2")){

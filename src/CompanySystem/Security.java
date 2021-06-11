@@ -6,7 +6,6 @@ public class Security extends Staff {
   private int workoutDaysPerWeek;
   private boolean carryGun;
   private String gun = ""; 
-  private static int totalSecurity = 0;
   // Constructor for security guards 
   public Security(String fName, String lName, int sala, int Whour, String titl, String UniCol, int WorOutDay, boolean CarGun){
     super(fName, lName, sala, Whour, titl);

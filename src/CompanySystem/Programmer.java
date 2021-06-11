@@ -5,7 +5,6 @@ public class Programmer extends Staff {
   private String programmingLanguage;
   private int programmerID;
   private int timeInCompany;
-  private static int totalProgrammer = 0;
   // Constructor for programmers
   public Programmer(String fName, String lName, int sala, int Whour, String titl, String programLan, int IDNum, int time){
     super(fName, lName, sala, Whour, titl);
@@ -32,7 +31,7 @@ public class Programmer extends Staff {
     System.out.println("Salary: $" + getSalary());
     System.out.println("Work Hours Each Day: " + getWorkHours());
     System.out.println("Programming language using: " + getProgrammingLanguage());
-    System.out.println("He/She has worked in the company for: " + getTimeInCompany() + "year(s)");
+    System.out.println("He/She has worked in the company for: " + getTimeInCompany() + " year(s)");
     return "--------------------------------------";
   }
 }
