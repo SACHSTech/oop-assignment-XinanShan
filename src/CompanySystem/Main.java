@@ -42,20 +42,26 @@ public class Main {
     System.out.println(theFort.getManagerSize() + " Managers ");
     System.out.println(theFort.getProgrammerSize() + " Programmers ");
     System.out.println(theFort.getSecuritySize() + " Security Guards");
-    System.out.println("Please enter the position of the staff you want to see");
-   
+    System.out.println("Please enter the number for the position of the staff you want to see");
+    System.out.println("1. Manager");
+    System.out.println("2. Programmer");
+    System.out.println("3. Security Guard");
+    System.out.println("Enter any other key to exit");
     // Showing the number of people at each position and ask the user for the input
-    String choice = "";
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-    choice = keyboard.readLine();
-    if (choice.equalsIgnoreCase("Manager") || choice.equalsIgnoreCase("Managers")){
-      theFort.printManagerList();
-    } else if (choice.equalsIgnoreCase("Programmer") || choice.equalsIgnoreCase("Programmers")){
-      theFort.printProgrammerList();
-    } else if (choice.equalsIgnoreCase("Security Guard") || choice.equalsIgnoreCase("Security Guards")){
-      theFort.printSecurityList();
-    } else{
-      System.out.println("Please exit the system and enter a valid position next time");
+    While (true){
+      String choice = "";
+      choice = keyboard.readLine();
+      if (choice == 1){
+        theFort.printManagerList();
+      } else if (choice == 2){
+        theFort.printProgrammerList();
+      } else if (choice == 3){
+        theFort.printSecurityList();
+      } else{
+        System.out.println("Thank you for using the Fort System!");
+        break;
+      }
     }
   }
 }
